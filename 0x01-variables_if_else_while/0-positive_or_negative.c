@@ -4,10 +4,6 @@
 
 /**
  * main - Checks for the sign of a number
- * @n: Number to be checked
- *
- * Description: Generates a random number prints it
- * stating if it is posite, negative or zero.
  *
  * Return: 0
  */

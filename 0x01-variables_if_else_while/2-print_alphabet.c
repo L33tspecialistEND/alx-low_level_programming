@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 /**
  * main - Prints the alphabet
  *
@@ -7,10 +7,10 @@
 
 int main(void)
 {
-	char alphabet;
+	char alphabet[27];
 	alphabet = "abcdefghijklmnopqrstuvwxyz";
 	
-	putchar("%c\n", alphabet);
+	putchar("%s\n", alphabet);
 
 	return (0);
 }

@@ -7,10 +7,11 @@
 
 int main(void)
 {
-	char alphabet[27];
-	alphabet = "abcdefghijklmnopqrstuvwxyz";
-	
-	putchar("%s\n", alphabet);
+
+	for (int alphabet = 'a'; alphabet <= 'z'; alphabet++)
+	{
+		putchar(alphabet);
+	}
 
 	return (0);
 }

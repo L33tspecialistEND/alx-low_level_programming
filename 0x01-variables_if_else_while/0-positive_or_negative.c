@@ -14,6 +14,9 @@
 
 int main(void)
 {
+/**
+ * @n: Number to generated
+ */
 	int n;
 
 	srand(time(0));

@@ -1,18 +1,7 @@
-void write(char sentence[50])
+#include <unistd.h>
+
+int _putchar(char c)
 {
-	puts(sentence);
-
-	return;
+	return (write(1, &c, 1));
 }
-
-void print_alphabet(void)
-{
-	char letter;
-
-	for(letter = 'a'; letter <= 'z'; letter++)
-	{
-		putchar(letter);
-	}
-
-	return;
-}
+void print_alphabet(void);

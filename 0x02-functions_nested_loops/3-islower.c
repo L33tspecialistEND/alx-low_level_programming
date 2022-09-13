@@ -3,8 +3,10 @@
 /**
  * _islower - Checks if a character is lowercase
  * @c: Number to pass _islower function
+ *
+ * Return: 0
  */
-void _islower(int c)
+int _islower(int c)
 {
 	if (c >= 97 && c<= 12)
 	{
@@ -14,4 +16,6 @@ void _islower(int c)
 	{
 		return (0);
 	}
+
+	return (0);
 }

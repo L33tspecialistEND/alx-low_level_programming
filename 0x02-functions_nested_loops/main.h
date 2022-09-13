@@ -1,6 +1,9 @@
-int print(sentence)
+int write(char sentence[50])
 {
-	puts(sentence);
+	int string;
 
-	return (0);
+	puts(sentence);
+	string = sentence;
+
+	return string;
 }

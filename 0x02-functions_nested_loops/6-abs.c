@@ -2,6 +2,7 @@
 
 /**
  * _abs - Prints the absolute value of a number
+ * @n: Number passed to _abs function
  *
  * Return: 0
  */

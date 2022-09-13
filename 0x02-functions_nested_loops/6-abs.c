@@ -5,18 +5,16 @@
  *
  * Return: 0
  */
-int _abs(int)
+int _abs(int n)
 {
-	int a;
-
-	if (a >= 0)
+	if (n >= 0)
 	{
-		return (a);
+		return (n);
 	}
 	else
 	{
-		a = a * -1;
-		return (a);
+		n = n * -1;
+		return (n);
 	}
 	return (0);
 }

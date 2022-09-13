@@ -6,9 +6,17 @@
  *
  * Return: 0
  */
-int _putchar(char c)
+char _putchar(char c[])
 {
-	return (write(1, &c, 1));
+	int count, sz;
+	
+	sz = sizeof(c) / sizeof(char);
+	for(count = 0; count <= sz; count++)
+	{
+		puts(c);
+	}
+	
+	return (c);
 }
 void print_alphabet(void)
 {

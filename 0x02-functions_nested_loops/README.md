@@ -1,1 +1,1 @@
-A readme for functions and loops
+A readme for this directory

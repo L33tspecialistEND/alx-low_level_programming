@@ -1,9 +1,6 @@
-int write(char sentence[50])
+void write(char sentence[50])
 {
-	int string;
-
 	puts(sentence);
-	string = sentence;
 
-	return string;
+	return;
 }

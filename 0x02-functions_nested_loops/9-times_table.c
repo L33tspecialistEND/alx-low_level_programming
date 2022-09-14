@@ -6,19 +6,24 @@
  */
 void times_table(void)
 {
-	int i, j;
+	int i, j, result;
 
+	result = i * j;
 	for (i = 0; i <= 9; i++)
 	{
 		for (j = 0; j <= 9; j++)
 		{
-			if (j != 9)
+			if (result <= 9)
 			{
-				printf("%d,  ", i * j);
+				printf("%d,  ", result);
 			}
-			else
+			else if (result > 9)
 			{
-				printf("%d\n", i * j);
+				printf("%d, ", result);
+			}
+			else if (result > 9 && j == 9)
+			{
+				printf("%d\n", result);
 			}
 		}
 	}

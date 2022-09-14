@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 void jack_bauer(void)
@@ -10,9 +11,7 @@ void jack_bauer(void)
 		{
 			for (j = 0; j <= 59;)
 			{
-				_putchar(i);
-				_putchar(':');
-				_putchar(j);
+				printf("%02d:%02d", i, j);
 			}
 		}
 	}	

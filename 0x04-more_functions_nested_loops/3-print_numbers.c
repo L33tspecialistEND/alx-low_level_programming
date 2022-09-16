@@ -1,9 +1,12 @@
 #include "main.h"
-
+#include <unistd.h>
+#include <stdio.h>
 /**
  * print_numbers - Prints numbers 0 to 9
  * @c: Number passed to loop in function
  */
+int main(void)
+{}
 void print_numbers(void)
 {
 	int c;
@@ -13,4 +16,8 @@ void print_numbers(void)
 		_putchar(c);
 	}
 	_putchar('\n');
+}
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
 }

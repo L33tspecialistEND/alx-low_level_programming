@@ -4,3 +4,4 @@ int mul(int a, int b);
 void print_numbers(void);
 void print_number(int n);
 int _putchar(char);
+void print_most_numbers(void);

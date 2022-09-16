@@ -2,7 +2,6 @@
 
 /**
  * print_numbers - Prints numbers 0 to 9
- * @c: Number passed to loop in function
  */
 void print_numbers(void)
 {

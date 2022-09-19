@@ -8,9 +8,9 @@
 int _strlen(char *s)
 {
 	int len;
-	char str[];
+	char str[1000];
 
-	*s = str[];
+	*s = str[1000];
 	for (len = 0; str[len] != '\0'; ++len)
 
 	return (len);

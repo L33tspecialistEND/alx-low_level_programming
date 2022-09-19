@@ -12,6 +12,8 @@ int _strlen(char *s)
 
 	*s = str[1000];
 	for (len = 0; str[len] != '\0'; ++len)
+	{
+	}
 
 	return (len);
 }

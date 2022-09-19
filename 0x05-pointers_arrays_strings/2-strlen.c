@@ -8,10 +8,8 @@
 int _strlen(char *s)
 {
 	int len;
-	char str[1000];
 	
-	s = &str;
-	len = sizeof (str);
+	len = sizeof (*s);
 
 	return (len);
 }

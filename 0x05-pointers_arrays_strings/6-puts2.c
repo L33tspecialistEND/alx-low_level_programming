@@ -17,11 +17,10 @@ void puts2(char *str)
 	}
 	for (i = 0; i <= len; len++)
 	{
-		if (i % 2 != 0)
+		if (i % 2 == 0)
 		{
-			continue;
+			_putchar(str[i]);
 		}
-		_putchar(str[i]);
 	}
 	_putchar('\n');
 }

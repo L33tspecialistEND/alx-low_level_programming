@@ -19,8 +19,12 @@ char *_strncat(char *dest, char *src, int n)
 			break;
 		a++;
 	}
-
-	for (b = 0; b <= n; a++, b++)
+	if (n > a)
+	{
+		for (b = 0; b < a; a++, b++)
+			dest[a + 1] = src[b];
+	}
+	for (b = 0; b < n; a++, b++)
 		dest[a + 1] = src[b];
 
 	return (dest);

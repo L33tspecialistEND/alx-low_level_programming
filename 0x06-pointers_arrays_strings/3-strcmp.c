@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * _strcmp - Compares two strings
+ * @s1: First string
+ * @s2: Second string
+ *
+ * Return: 0 or j
+ */
 int _strcmp(char *s1, char *s2)
 {
 	int i, j;
@@ -17,4 +24,6 @@ int _strcmp(char *s1, char *s2)
 			return (0);
 		i++;
 	}
+
+	return (0);
 }

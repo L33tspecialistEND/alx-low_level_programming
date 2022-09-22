@@ -2,10 +2,11 @@
 
 /**
  * string_toupper - Changes lowercase letters of a string to uppercase
+ * @s: String
  *
  * Return: 0
  */
-char *string_toupper(char *)
+char *string_toupper(char *s)
 {
 	int i;
 
@@ -18,6 +19,4 @@ char *string_toupper(char *)
 			s[i] = s[i] - 32;
 		i++;
 	}
-
-	return (0);
 }

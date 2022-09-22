@@ -15,7 +15,7 @@ char *_strncpy(char *dest, char *src, int n)
 	a = 0;
 	while (a >= 0)
 	{
-		if (src[a + 1] == '\0')
+		if (src[a] == '\0')
 			break;
 		a++;
 	}
@@ -23,16 +23,18 @@ char *_strncpy(char *dest, char *src, int n)
 	if (n <= a)
 	{
 		for (b = 0, c = 0; c <= n; b++, c++)
+		{
+			if (src[c] == '\0')
+				break;
 			dest[b] = src[c];
+		}
 	}
 	else if (n > a)
 	{
-		for (b = 0, c = 0; c <= a; b++, c++)
-		{
+		for (b = 0, c = 0; c < a; b++, c++)
 			dest[b] = src[c];
-		}
-		for (; (a + 1) <= n; a++)
-			dest[a + 1] = '\0';
+		for (; a <= n; a++)
+			dest[a] = '\0';
 	}
 
 	return (dest);

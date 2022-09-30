@@ -9,13 +9,15 @@
  */
 int main(int argc __attribute__((unused)), char *argv[])
 {
-	int mul;
+	int x, y, mul;
 
-	if (argv[1] == NULL || argv[2] == NULL)
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	mul = argv[1] * argv[2];
+	x = atoi(argv[1]);
+	y = atoi(argv[2]);
+	mul = x * y;
 	printf("%d\n", mul);
 }

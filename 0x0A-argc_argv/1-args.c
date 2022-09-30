@@ -9,12 +9,7 @@
  */
 int main(int argc, char *argv[] __attribute__((unused)))
 {
-	int i, sum;
-
-	sum = 0;
-	for (i = 0; i < argc; i++)
-		sum += i;
-	printf("%d\n", sum);
+	printf("%d\n", argc - 1);
 
 	return (0);
 }

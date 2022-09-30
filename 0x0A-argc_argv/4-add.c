@@ -11,7 +11,7 @@
  */
 int main(int argc, char **argv)
 {
-	int i, add;
+	int i, j, add;
 
 	if (argc == 1)
 		printf("0\n");

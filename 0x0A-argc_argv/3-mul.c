@@ -8,7 +8,7 @@
  *
  * Return: 0 or 1
  */
-int main(int argc __attribute__((unused)), char *argv[])
+int main(int argc, char *argv[])
 {
 	int x, y, mul;
 

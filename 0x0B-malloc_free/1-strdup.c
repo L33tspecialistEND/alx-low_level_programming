@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
 
@@ -15,9 +16,12 @@ char *_strdup(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 		;
-	str_2 = malloc(i * sizeof(char));
+	str_2 = malloc((i + 1) * sizeof(char));
 	if (str == NULL)
+	{
+		printf("failed to allocate memory\n");
 		return (NULL);
+	}
 
 	for (j = 0; j < i; j++)
 		str_2[j] = str[j];
